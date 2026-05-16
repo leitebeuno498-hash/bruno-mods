@@ -115,4 +115,4 @@ function Login({ setLogado }) {
 
 }
 
-export default Login;
+export default Login

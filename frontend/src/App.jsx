@@ -42,7 +42,7 @@ function App() {
     try {
 
       const res = await axios.get(
-        "http://localhost:3001/api/mods"
+        "https://bruno-mods.onrender.com/api/mods"
       );
 
       setMods(res.data);
@@ -67,7 +67,7 @@ function App() {
       formData.append("imagem", imagem);
 
       await axios.post(
-        "http://localhost:3001/api/mods/create",
+        "https://bruno-mods.onrender.com/api/mods/create",
         formData,
         {
           headers: {
@@ -101,7 +101,7 @@ function App() {
     try {
 
       await axios.delete(
-        `http://localhost:3001/api/mods/${id}`,
+        `https://bruno-mods.onrender.com/api/mods/${id}`,
         {
           headers: {
             Authorization:
@@ -191,7 +191,7 @@ function App() {
           <div className="card" key={mod._id}>
 
             <img
-              src={`http://localhost:3001/uploads/${mod.imagem}`}
+              src={`https://bruno-mods.onrender.com/uploads/${mod.imagem}`}
               alt=""
               className="mod-img"
             />

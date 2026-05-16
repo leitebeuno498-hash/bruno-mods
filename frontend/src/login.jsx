@@ -13,7 +13,7 @@ function Login({ setLogado }) {
     try {
 
       await axios.post(
-        "http://localhost:3001/api/auth/register",
+        "https://bruno-mods.onrender.com/api/auth/register",
         {
           username,
           password,
@@ -38,7 +38,7 @@ function Login({ setLogado }) {
     try {
 
       const res = await axios.post(
-        "http://localhost:3001/api/auth/login",
+        "https://bruno-mods.onrender.com/api/auth/login",
         {
           username,
           password,

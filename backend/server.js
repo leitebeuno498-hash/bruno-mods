@@ -1,11 +1,3 @@
-const licenseRoutes =
-require("./routes/license");
-
-app.use(
-  "/api/license",
-  licenseRoutes
-);
-
 require("dotenv").config();
 
 const express = require("express");
@@ -14,7 +6,7 @@ const cors = require("cors");
 
 const authRoutes = require("./routes/auth");
 const modRoutes = require("./routes/mods");
-
+const licenseRoutes = require("./routes/license");
 
 const app = express();
 

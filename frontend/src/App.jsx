@@ -3,8 +3,8 @@ import axios from "axios";
 
 import "./App.css";
 
-import Login from "./Login";
-import Client from "./Client";
+import Login from "./Login.jsx";
+import Client from "./Client.jsx";
 
 function App() {
 

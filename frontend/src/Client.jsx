@@ -18,7 +18,7 @@ function Client() {
   async function buscarLicencas() {
 
     const res = await axios.get(
-      `http://localhost:3001/api/license/${user._id}`
+      `https://bruno-mods.onrender.com/api/license/${user._id}`
     );
 
     setLicenses(res.data);
@@ -28,7 +28,7 @@ function Client() {
   async function gerarKey() {
 
     await axios.post(
-      `http://localhost:3001/api/license/generate/${user._id}`
+      `https://bruno-mods.onrender.com/api/license/generate/${user._id}`
     );
 
     buscarLicencas();
@@ -53,7 +53,8 @@ function Client() {
 
         {licenses.map((license) => (
 
-          <div className="card"
+          <div
+            className="card"
             key={license._id}
           >
 
@@ -77,6 +78,7 @@ function Client() {
     </div>
 
   );
+
 }
 
 export default Client;
